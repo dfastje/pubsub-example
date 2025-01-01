@@ -1,0 +1,12 @@
+# EXPERIMENTAL: untested
+
+services:
+  rabbitmq:
+    image: apache/activemq-artemis:latest-alpine
+    container_name: rabbitmq
+    ports:
+# Console port
+      - 61616:61616
+# Usage port
+      - 8161:8161
+    restart: no
